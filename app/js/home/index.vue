@@ -1,7 +1,7 @@
 <template lang="html">
     <div :class="$style.home">
         <h1>Home</h1>
-        <input type="text" name="" value="" v-modefont-familyl="msg" @keydown="get">
+        <input type="text" name="" value="" @keydown="get">
         {{msg}}
     </div>
 </template>
