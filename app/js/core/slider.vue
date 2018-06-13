@@ -1,5 +1,5 @@
 <template>
-    <section class="swiper">
+    <section :class="cname">
         <swiper :options="options" :not-next-tick="options.notNextTick">
             <swiper-slider v-for:"item in items" :key="item.href">
                 <router-link to="{name:item.href}">
