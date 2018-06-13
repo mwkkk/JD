@@ -1,35 +1,19 @@
 <template lang="html">
-    <div :class="$style.home">
-        <h1>Home</h1>
-        <input type="text" name="" value="" @keydown="get">
-        {{msg}}
+    <div>
+        <heador></heador>
     </div>
 </template>
 
 <script>
+import Heador from '../public/header.vue'
 export default {
-  data(){
-    return {
-      msg:''
-    }
-  },
-  watch:{
-    msg(){
-      alert('watch')
-    }
-  },
-  methods:{
-    get(){
-      alert('method')
-    }
+  components:{
+    Heador
   }
 }
 </script>
 
-<style lang="scss" module>
+<style lang="scss">
   @import '../../css/reset.scss';
-  .home{
-    color: red;
-    font-size: 80px;
-  }
+  
 </style>
